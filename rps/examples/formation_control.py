@@ -1,3 +1,4 @@
+#! /usr/bin/env python3
 import rps.robotarium as robotarium
 from rps.utilities import graph
 from rps.utilities import transformations
@@ -32,8 +33,8 @@ weights = np.array([
 # Experiment constants
 iterations = 2000
 N = 6
+r = robotarium.Robotarium(number_of_agents=N, show_figure=True, save_data=True, update_time=1)
 
-r = robotarium.Robotairum(number_of_agents=N, number_of_agents=10, show_figure=True, save_data=True, update_time=1)
 
 si_barrier_cert = create_single_integrator_barrier_certificate(N)
 
